@@ -1,0 +1,87 @@
+body{
+    background-color: White;
+}
+
+.logo{
+    max-width: 200px;
+    margin: 10px;
+}
+
+.laptop{
+    max-width: 400px;
+    /* float: right; */
+}
+.container{
+    background: #efefef;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text{
+    padding-top: 70px;
+}
+
+h5, h3{
+    color: #1d3d59;
+    margin: 0 !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3{
+    font-size: 28px;
+}
+
+.text button{
+    font-size: 18px;
+    border: 2px solid #1d3d59;
+    margin: 20px auto;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, #182835, #1d3d59);
+}
+
+.text button:hover{
+    cursor: pointer;
+}
+
+.container2{
+    text-align: center;
+    padding: 60px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, #182835, #1d3d59);
+}
+
+.container2 h1, .container2 h2{
+    margin: 0px !important;
+}
+
+
+button:hover{
+    border: 2px solid #1d3d59;
+    background: transparent;
+    color: #1d3d59;
+}
+
+@media screen and (max-width: 800px)  {
+    .container{
+        text-align: center;
+        flex-flow: column-reverse;
+    }
+    .laptop{
+        width: -webkit-fill-available;
+        margin: auto;
+    }
+    .text{
+        padding-top: 20px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    h3{
+        font-size: 22px;
+    }
+    
+}

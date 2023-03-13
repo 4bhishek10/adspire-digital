@@ -11,7 +11,7 @@ body{
     max-width: 400px;
     /* float: right; */
 }
-.container{
+.container, .approach-flex{
     background: #efefef;
     display: flex;
     justify-content: space-evenly;
@@ -31,7 +31,7 @@ h3{
     font-size: 28px;
 }
 
-.text button{
+.text button, .schedule-call button{
     font-size: 18px;
     border: 2px solid #1d3d59;
     margin: 20px auto;
@@ -43,11 +43,11 @@ h3{
     background: linear-gradient(to right, #182835, #1d3d59);
 }
 
-.text button:hover{
+.text button:hover, .schedule-call button{
     cursor: pointer;
 }
 
-.container2{
+.container2, .container4{
     text-align: center;
     padding: 60px;
     color: white;
@@ -55,8 +55,12 @@ h3{
     background: linear-gradient(to right, #182835, #1d3d59);
 }
 
-.container2 h1, .container2 h2{
+.container2 h1, .container2 h2, .container4 h1, .container4 h2{
     margin: 0px !important;
+}
+
+.container4 h2{
+    font-size: 2.5rem;
 }
 
 
@@ -66,12 +70,85 @@ button:hover{
     color: #1d3d59;
 }
 
+.ig{
+    max-width: 400px;
+}
+
+.approach{
+    text-align: center;
+    padding: 7%;
+    background: #efefef;
+}
+.approach-flex{
+    margin-top: 25px;
+}
+
+.approach h1{
+    color: #1d3d59;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.approach h3{
+    font-size: 16px;
+    color: black;
+    font-weight: normal !important;
+    font-style: italic;
+}
+.approach p{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+
+.schedule-call{
+    padding: 7%;
+    background: #efefef;
+    font-family: 'Raleway', sans-serif;
+}
+
+.schedule-call h1{
+    font-weight: bolder;
+    color: #1d3d59;
+}
+.schedule-call h1, .schedule-call h2{
+    margin-bottom: 0px;
+}
+.schedule-call h2{
+    margin-top: 40px;
+}
+li{
+    margin-bottom: 15px;
+}
+p{
+    font-size: 18px;
+    opacity: 0.8;
+}
+ul {
+    list-style: none;
+}
+  
+ul li p:before {
+   content: '✓';
+   display: inline-block;
+   margin-right: 4px;
+   color: #1d3d59;
+   border: 1px solid #1d3d59;
+   border-radius: 200px;
+   width: 15px;
+   color: white;
+   background: #1d3d59;
+}
+
+li p{
+    display: inline-block;
+    margin: 5px;
+}
+
 @media screen and (max-width: 800px)  {
-    .container{
+    .container, .approach-flex{
         text-align: center;
         flex-flow: column-reverse;
     }
-    .laptop{
+    .laptop, .ig{
         width: -webkit-fill-available;
         margin: auto;
     }
